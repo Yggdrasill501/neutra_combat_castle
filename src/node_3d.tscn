@@ -1,7 +1,36 @@
-[gd_scene format=3 uid="uid://cesbq3caxj74p"]
+[gd_scene load_steps=2 format=3 uid="uid://cesbq3caxj74p"]
+
+[sub_resource type="Theme" id="Theme_x52df"]
 
 [node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.47711, 0, 0)
 
 [node name="Ground" type="Panel" parent="."]
 offset_right = 2670.0
 offset_bottom = 2038.0
+theme = SubResource("Theme_x52df")
+
+[node name="Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 6.0
+offset_top = -2.0
+offset_right = 3014.0
+offset_bottom = 2030.0
+
+[node name="MenuButton" type="MenuButton" parent="Menu"]
+layout_mode = 0
+offset_left = 880.0
+offset_top = 506.0
+offset_right = 1700.0
+offset_bottom = 648.0
+text = "Start New Combat
+"
+
+[node name="TextEdit" type="TextEdit" parent="Menu/MenuButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.766
+anchor_bottom = 1.465
+offset_right = -620.12
+offset_bottom = -200.03
